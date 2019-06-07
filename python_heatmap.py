@@ -6,12 +6,14 @@ import pandas as pd
 import numpy as np
 
 '''
-This file is used to create a heatmap that shows Java salary per state
+This file is used to create a heatmap that shows Python salary per state
 '''
 
 plotly.tools.set_credentials_file(username='wyvette0542', api_key='9IqIPiGXjRvppiBBZSER') # Credentials to use plotly
 
-df = pd.read_pickle('dataframe5.pkl')
+df = pd.read_pickle('dataframe5.pkl') # Read a pkl file from the directory holding our dataframe
+
+assert(isinstance(df, pd.Dataframe)) # Ensure that it is a dataframe
 
 scl = [
     [0.0, 'rgb(242,240,247)'],
@@ -32,7 +34,7 @@ data = [go.Choropleth(
     colorscale = scl,   # This is a template colorscale 
     autocolorscale = False, 
     locations = df['State'].str.upper(),   # This provides the key for which we can assign to the heatmap
-    z=df['PythonMean'],   # Our main metric is the average salary per state
+    z=df['PythonMean'],     # Our main metric is the average salary per state
     locationmode = 'USA-states',   # This is mapping for our key
     text = df['text'],   # This displays the box text per state
     marker = go.choropleth.Marker(
