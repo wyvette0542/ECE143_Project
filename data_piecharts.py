@@ -8,6 +8,11 @@ This file will create a database that we will use to compare languageCount vs. t
 
 df2 = pd.read_pickle('dataframe2.pkl') #import pickled dataframe
 
+assert(isinstance(df2,pd.Dataframe))
+assert('States' in df2)
+assert('Language' in df2)
+assert('Salary' in df2)
+
 grp1 = df2.groupby(df2.Language) #group by state
 languagelist = grp1.Language.unique() #create a list of the unique languages
 
