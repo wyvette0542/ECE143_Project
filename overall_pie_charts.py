@@ -12,6 +12,11 @@ The purpose is to compare the two metrics and find a correlation
 
 df4 = pd.read_pickle('dataframe4.pkl') #load dataframe4 from the directory
 
+assert(isinstance(df4, pd.Dataframe)) # assert dataframe type 
+assert('Market %' in df4.columns)
+assert('Language Count' in df4.columns)
+assert('Language' in df4.columns)
+
 # assign the datasets of interest to variables
 x1 = df4['Market %']
 x1_new = x1[0: 10]
@@ -32,5 +37,5 @@ ax1.axis('equal') #Ensures both plots are circular
 
 fig1,ax2 = plt.subplots() #subplot for listing count
 ax2.pie(x2_new,explode = explode,labels =y_new, colors=plt.cm.Set3(np.linspace(0, 1, 12)), radius=8,shadow=True) #instantiate second pie chart
-ax2.title.set_text('Amount of Listing per Programming Language on the Market')
+ax2.title.set_text('Popularity by Listing Count per Programming Language ')
 ax2.axis('equal') #Ensures both plots are circular
