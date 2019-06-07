@@ -12,6 +12,17 @@ This file is used to create a heatmap that compares the highest paying jobs vs. 
 plotly.tools.set_credentials_file(username='wyvette0542', api_key='9IqIPiGXjRvppiBBZSER')   # Credentials to use plotly
 
 df = pd.read_pickle('dataframe3.pkl')
+assert(isinstance(df,pd.Dataframe))
+assert('State' in df.columns)
+assert('MaxName' in df.columns)
+assert('MaxMean' in df.columns)
+assert('MaxMax' in df.columns)
+assert('MaxMin' in df.columns)
+assert('MinName' in df.columns)
+assert('MinMean' in df.columns)
+assert('MinMax' in df.columns)
+assert('MinMin' in df.columns)
+assert('Mean' in df.columns)
 
 # df['text'] creates the text that is displayed when you hover over a state
 df['text'] = 'State: '+ df['State'] + '<br>'+'Highest: '+ df['MaxName'] + '<br>' + \
