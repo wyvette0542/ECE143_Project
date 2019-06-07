@@ -16,6 +16,6 @@ Our team created three pie charts to analysis each programming language's market
  
 ### Heatmaps
 Our team created three heatmaps to analysis the average salary in each state. 
- - **create_heatmap_avg.py**: This file creates a heatmap showing the average Software Engineering job salary in each state. 
+ - **create_heatmap_overall.py**: This file creates a heatmap showing the highest and lowest Software Engineering job salary in each state. 
  - **create_heatmap_java.py**: This file creates a heatmap showing the average salary of the jobs which required Java skill. 
  - **create_heatmap_python.py**: This file creates a heatmap showing the average salary of the jobs which required Python skill. 
