@@ -14,6 +14,10 @@ plotly.tools.set_credentials_file(username='wyvette0542', api_key='9IqIPiGXjRvpp
 df = pd.read_pickle('dataframe5.pkl') # Read a pkl file from the directory holding our dataframe
 
 assert(isinstance(df, pd.Dataframe)) # Ensure that it is a dataframe
+assert('PythonMean' in df.columns)
+assert('PythonMax' in df.columns)
+assert('PythonMin' in df.columns)
+assert('State' in df.columns)
 
 scl = [
     [0.0, 'rgb(242,240,247)'],
