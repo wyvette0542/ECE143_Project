@@ -14,12 +14,12 @@ We scrape these descriptions in order to create our data sets
 
 with open('CAGlassdoorURLS.txt') as f:  #This file contains the manually pulled url searches
     url_list = f.readlines()
-
+    
 headers = requests.utils.default_headers()    #need to provide a user-agent code to access the website
 headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',})
 
 for current in url_list:    # cycles through the list of urls provided
-    
+    assert(isinstance(current,str))
     # Extract job ids for the available 30 pages and append the ids to the file 'id_list.txt'
 
     for i in range(1, 31):    # There are 30 valid pages
