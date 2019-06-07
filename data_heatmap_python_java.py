@@ -13,6 +13,11 @@ totalStats = np.empty([1,10])
 
 df2 = pd.read_pickle('dataframe2.pkl')
 
+assert(isinstance(df2,pd.Dataframe))
+assert('States' in df2)
+assert('Language' in df2)
+assert('Salary' in df2)
+
 grp1 = df2.groupby(df2.States) #group by state
 statelist = grp1.States.unique() #create a list of unique states in our dataset
 
