@@ -6,8 +6,8 @@ This is the ECE 143 final project repo for team 8.
 Our team mannually scraped data from Glassdoor.com and save each job description into a numpy file. The dataset has 12285 non-reapeating job listings. 
  - First, **get_job_ids.py** pulls all the job ID's from Glassdoor and saves the ID numbers as a .txt file. 
  - Then, **save_text.py** loops through all the ID's and save each corresponding description into a separate numpy array of string. 
- - Next, **data_extraction.py** (or **data_extraction_elongated.py** if there were problems with the other file) saves two pandas dataframes from the numpy arrays to analyze for any given users purpose.  In addition, txt files corresponding to average salary and amount of languages, locations, or states are generated.  Finally, bar graphs are plotted.  
-
+ - Next, **data_extraction.py** (or **data_extraction_elongated.py** if there were problems with the other file) saves two pandas dataframes(dataframe1 and dataframe2) from the numpy arrays to analyze for any given users purpose.  In addition, txt files corresponding to average salary and amount of languages, locations, or states are generated.  Finally, bar graphs are plotted.  
+ - After, **data_heatmap_python_java.py** , **data_heatmap_avg.py**, 
 ## Dataframes
 In processing our data, we made 5 separate dataframes. Each used in different files for different .py files to generate our visualization.
  - **dataframe1.pkl**: Provides an overall dataframe of our data. Everything is grouped by job ID.
