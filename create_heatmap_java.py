@@ -12,6 +12,11 @@ This file is used to create a heatmap that shows Java salary per state
 plotly.tools.set_credentials_file(username='wyvette0542', api_key='9IqIPiGXjRvppiBBZSER')   # Credentials to use plotly
 
 df = pd.read_pickle('dataframe5.pkl')
+assert(isinstance(df,pd.Dataframe))
+assert('State' in df.columns)
+assert('JavaMean' in df.columns)
+assert('JavaMax' in df.columns)
+assert('JavaMin' in df.columns)
 
 scl = [
     [0.0, 'rgb(242,240,247)'],
