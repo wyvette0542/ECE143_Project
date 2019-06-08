@@ -9,6 +9,7 @@ To run this project, you need to have the following python modules installed:
  - Pandas
  - Plotly
  - Matplotlib
+ - SciPy
 
 ## Data Scraping
 Our team manually scraped data from Glassdoor.com and saved each job description into a numpy file. The dataset has 12285 non-repeating job listings. 
