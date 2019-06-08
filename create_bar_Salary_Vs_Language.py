@@ -1,5 +1,5 @@
 '''
-This file creates the Bar graph between salary and location
+This file creates the Bar graph between select programming languages and corresponding salaries
 Input: Dataframe
 Output: Graph
 '''
