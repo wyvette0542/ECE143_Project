@@ -27,12 +27,12 @@ Our team manually scraped data from Glassdoor.com and saved each job description
  
 ## Visualizations
 ### Pie Charts
-Our team created three pie charts to analysis each programming language's market representation. 
+Our team created three pie charts to analyze each programming language's market representation. 
  - **create_piecharts_overall.py**: This file creates two pie charts. One shows the market percentage of each language and the other one shows the amount of listings per language on the market. 
  - **intern_pie_chart.py**: Thie file create one pie chart showing the amount of internship listings per language on the market. 
  
 ### Heatmaps
-Our team created three heatmaps to analysis the average salary in each state. 
+Our team created three heatmaps to analyze the average salary in each state. 
  - **create_heatmap_overall.py**: This file creates a heatmap showing the highest, lowest, and mean Software Engineering job salary.
  - **create_heatmap_java.py**: This file creates a heatmap showing the average salary of the jobs which required Java skill. 
  - **create_heatmap_python.py**: This file creates a heatmap showing the average salary of the jobs which required Python skill. 
