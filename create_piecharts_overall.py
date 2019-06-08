@@ -17,6 +17,7 @@ assert('Market %' in df4.columns)
 assert('LanguageCount' in df4.columns)
 assert('Language' in df4.columns)
 
+df4 = df4.sort_values(by=['Market %'],ascending=False) #Sort by highest market % in order to have a more meaningful pie chart
 # assign the datasets of interest to variables
 x1 = df4['Market %']
 x1_new = x1[0: 10]
