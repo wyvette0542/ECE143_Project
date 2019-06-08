@@ -40,3 +40,8 @@ Our team created three heatmaps to analysis the average salary in each state.
 ### Line Graph
 Our team created one line graph to visualize the difference between a language's market share and popularity.
  - **create_line_market_v_popularity.py**: This file creates a line graph showing the percentage difference between a language's popularity by listing count and the average salary that that language provides. 
+ 
+### Bar Plots
+Our team created two bar plots to visualize languages salary and salary vs. states
+- **create_bar_State_vs_Language.py**
+- **create_bar_Salary_vs_Language.py**
