@@ -13,7 +13,7 @@ Our team manually scraped data from Glassdoor.com and saved each job description
  - **dataframe1.pkl**: Provides an overall dataframe of our data. Everything is grouped by job ID.
  - **dataframe2.pkl**: Expands our data so that we have a data entry for each language per job ID.
  - **dataframe3.pkl**: Dataframe that groups by a state's min and max paying languages per state. Used to create overall heatmap.
- - **dataframe4.pkl**: Dataframe for our pie charts. The data is divided by Market% per language and popularity by listing count.
+ - **dataframe4.pkl**: Dataframe for our pie charts and line graph. 
  - **dataframe5.pkl**: Dataframe that is grouped by Python and Java data entries to create our java and python heatmaps.
  
 ## Visualizations
