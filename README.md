@@ -26,6 +26,11 @@ Our team manually scraped data from Glassdoor.com and saved each job description
  - **internshipPopularity.npy**: Dictionary for our internship listing pie chart. 
  
 ## Visualizations
+### Bar Graphs
+Our team has created two bar graphs for analysis of salary vs programming language or state the job is in
+ - **Salary_Vs_State.py**: This file plots the bar graph determining the relationship between a job's salary and the state it is located in
+  - **Salary_Vs_Language.py**: This file plots the bar graph determining the relationship between a programming language and it's salary
+  
 ### Pie Charts
 Our team created three pie charts to analyze each programming language's market representation. 
  - **create_piecharts_overall.py**: This file creates two pie charts. One shows the market percentage of each language and the other one shows the amount of listings per language on the market. 
