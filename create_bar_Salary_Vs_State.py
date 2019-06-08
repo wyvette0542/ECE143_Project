@@ -1,3 +1,9 @@
+'''
+This file creates the Bar graph between salary and state location of job
+Input: Dataframe
+Output: Graph
+'''
+
 import pandas as pd
 import matplotlib.pyplot as plt 
 
