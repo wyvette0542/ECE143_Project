@@ -4,6 +4,9 @@ import pandas as pd
 
 '''
 This file will create a database that we will use to compare languageCount vs. the market% that a language represents
+
+Input: Pandas Dataframe
+Output: Pandas Dataframe
 '''
 
 df2 = pd.read_pickle('dataframe2.pkl') #import pickled dataframe
