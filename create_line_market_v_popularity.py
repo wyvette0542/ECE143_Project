@@ -10,6 +10,7 @@ It takes a pickled dataframe as its input
 '''
 
 df4 = pd.read_pickle('dataframe4.pkl') #load dataframe4 from the directory
+assert(isinstance(df4,pd.DataFrame))
 assert('Diff' in df4.columns)
 assert('Language' in df4.columns)
 
