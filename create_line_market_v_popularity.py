@@ -5,13 +5,15 @@ import matplotlib
 import sys
 from matplotlib.pylab import gca
 '''
-This file creates two pie charts
-One chart shows the market representation of each language 
-The other chart shows the amount of listings per language on the market
-The purpose is to compare the two metrics and find a correlation
+This file creates a line graph comparing the difference between a language's popularity vs. the average salary that language has
+It takes a pickled dataframe as its input
 '''
 
 df4 = pd.read_pickle('dataframe4.pkl') #load dataframe4 from the directory
+
+assert(isinstance(df4,pd.Dataframe))
+assert('Diff' in df4.columns)
+assert('Language' in df4.columns)
 
 #assign the datasets of interest to variables
 df4 = df4.sort_values(by=['Diff'],ascending=False)
