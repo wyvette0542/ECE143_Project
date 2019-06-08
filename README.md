@@ -16,7 +16,8 @@ Our team manually scraped data from Glassdoor.com and saved each job description
  - Then, **save_text.py** loops through all the IDs and saves each corresponding description into a separate numpy array of string. 
  
  ## Data Processing
- - **data_extraction.py** (or **data_extraction_elongated.py** if there were problems with the other file) saves two pandas dataframes(dataframe1 and dataframe2) from the numpy arrays to analyze for any given users purpose.  In addition, txt files corresponding to average salary and amount of languages, locations, or states are generated.  Finally, bar graphs are plotted.  
+ - **data_extraction.py** (or **data_extraction_elongated.py** if there were problems with the other file) saves two pandas dataframes(dataframe1 and dataframe2) from the numpy arrays to analyze for any given users purpose.  In addition, txt files corresponding to average salary and amount of languages, locations, or states are generated.
+ 
  - **data_heatmap_python_java.py** , **data_heatmap_avg.py**, and **data_pie_and_line.py** groups data by desirable metrics such as average salary or market representation percentage to create our data visualization. These groupings are then saved as three separate dataframes(dataframe3, dataframe4, and dataframe5).
  - **dataframe1.pkl**: Provides an overall dataframe of our data. Everything is grouped by job ID.
  - **dataframe2.pkl**: Expands our data so that we have a data entry for each language per job ID.
@@ -28,8 +29,8 @@ Our team manually scraped data from Glassdoor.com and saved each job description
 ## Visualizations
 ### Bar Graphs
 Our team has created two bar graphs for analysis of salary vs programming language or state the job is in
- - **Salary_Vs_State.py**: This file plots the bar graph determining the relationship between a job's salary and the state it is located in
-  - **Salary_Vs_Language.py**: This file plots the bar graph determining the relationship between a programming language and it's salary
+ - **Salary_Vs_State.py**: This file plots the bar graph determining the relationship between a job's salary and the state it is located in.  In addition, txt files are created.  
+  - **Salary_Vs_Language.py**: This file plots the bar graph determining the relationship between a programming language and its salary.  In addition, txt files are created.  
   
 ### Pie Charts
 Our team created three pie charts to analyze each programming language's market representation. 
