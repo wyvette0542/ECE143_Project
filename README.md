@@ -27,3 +27,7 @@ Our team created three heatmaps to analysis the average salary in each state.
  - **create_heatmap_overall.py**: This file creates a heatmap showing the highest, lowest, and mean Software Engineering job salary.
  - **create_heatmap_java.py**: This file creates a heatmap showing the average salary of the jobs which required Java skill. 
  - **create_heatmap_python.py**: This file creates a heatmap showing the average salary of the jobs which required Python skill. 
+
+### Line Graph
+Our team created one line graph to visualize the difference between a language's market share and popularity.
+ - **create_line_market_v_popularity.py**: This file creates a line graph showing the percentage difference between a language's popularity by listing count and the average salary that that language provides. 
