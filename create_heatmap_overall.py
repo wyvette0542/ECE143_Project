@@ -12,7 +12,6 @@ This file is used to create a heatmap that compares the highest paying jobs vs. 
 plotly.tools.set_credentials_file(username='wyvette0542', api_key='9IqIPiGXjRvppiBBZSER')   # Credentials to use plotly
 
 df = pd.read_pickle('dataframe3.pkl')
-assert(isinstance(df,type))
 assert('State' in df.columns)
 assert('MaxName' in df.columns)
 assert('MaxMean' in df.columns)
