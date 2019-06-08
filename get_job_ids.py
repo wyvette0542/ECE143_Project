@@ -14,7 +14,8 @@ We scrape these descriptions in order to create our data sets
 
 with open('CAGlassdoorURLS.txt') as f:  #This file contains the manually pulled url searches
     url_list = f.readlines()
-    
+assert(isinstance(url_list,list))
+assert(url_list != [])
 headers = requests.utils.default_headers()    #need to provide a user-agent code to access the website
 headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',})
 
