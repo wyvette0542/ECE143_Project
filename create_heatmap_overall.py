@@ -7,6 +7,8 @@ import numpy as np
 
 '''
 This file is used to create a heatmap that compares the highest paying jobs vs. the lowest paying jobs per state
+Input: Pandas Dataframe
+Output: Plotly Heat Map
 '''
 
 plotly.tools.set_credentials_file(username='wyvette0542', api_key='9IqIPiGXjRvppiBBZSER')   # Credentials to use plotly
