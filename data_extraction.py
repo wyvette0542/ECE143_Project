@@ -1,5 +1,7 @@
 '''
 This file extracts data from generated numpy files and creates two dataframes for further analysis
+Input: Numpy Files, Languages.txt file
+Output: Dataframes
 '''
 import numpy as np
 import re
