@@ -1,3 +1,6 @@
+'''
+This file extracts data from generated numpy files and creates two dataframes for further analysis
+'''
 import numpy as np
 import re
 import pandas as pd
