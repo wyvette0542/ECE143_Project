@@ -8,6 +8,7 @@ with open('languages.txt', 'r')as f:
     read_languages = f.readlines()
 
 languages = []
+assert isinstance(read_languages, list)
 for language in read_languages:
     languages.append(language.lower()[:-1])
 
