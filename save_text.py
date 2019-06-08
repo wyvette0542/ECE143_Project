@@ -7,6 +7,9 @@ import numpy as np
 '''
 This is our job description scraping file
 It goes through every id in 'id_list.txt' and save the text description as a numpy array of strings
+
+Input: .txt File
+Output: .txt Files
 '''
 
 headers = requests.utils.default_headers()    #need to provide a user-agent code to access the website
