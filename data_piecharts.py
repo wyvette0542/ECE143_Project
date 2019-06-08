@@ -8,11 +8,6 @@ This file will create a database that we will use to compare languageCount vs. t
 
 df2 = pd.read_pickle('dataframe2.pkl') #import pickled dataframe
 
-assert(isinstance(df2,pd.DataFrame))
-assert('States' in df2)
-assert('Language' in df2)
-assert('Salary' in df2)
-
 grp1 = df2.groupby(df2.Language) #group by state
 languagelist = grp1.Language.unique() #create a list of the unique languages
 
@@ -32,12 +27,18 @@ for lang in languagelist:	#iterate through the list of languages to populate lan
 sumLang = sum(langCount) #sum up the languageCounts in order to normalize the language count 
 langProp = langCount/sumLang #normalize the language count
 
-df4 = pd.DataFrame(columns = ['Language', 'Market %','LanguageCount']) #store the lists in a dataframe
+diff = langSalary-langProp
+
+
+df4 = pd.DataFrame(columns = ['Language', 'Market %','LanguageCount', 'Diff']) #store the lists in a dataframe
 df4.Language = languagelist.index #Market% and LanguageCount match up with the index of dataframe4
+
+
 df4['Market %'] = langSalary 
 df4['LanguageCount'] = langProp
+df4['Diff'] = diff 
 
-df4 = df4.sort_values(by=['Market %'],ascending=False) #Sort by highest market % in order to have a more meaningful pie chart
+#df4 = df4.sort_values(by=['Market %'],ascending=False) #Sort by highest market % in order to have a more meaningful pie chart
 df4.to_pickle('dataframe4.pkl') #pickle the dataframe
 
 
