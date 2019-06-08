@@ -1,24 +1,10 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt 
-
-
-# In[5]:
-
 
 loc_sal_lang = pd.read_pickle('dataframe1.pkl')
 assert(isinstance(loc_sal_lang,pd.DataFrame))
 language_data = pd.read_pickle('dataframe2.pkl')
 assert(isinstance(language_data,pd.DataFrame))
-
-
-# In[6]:
-
 
 # Location vs Salary
 grp = loc_sal_lang.groupby('Location')
