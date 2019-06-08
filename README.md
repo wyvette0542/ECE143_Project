@@ -9,7 +9,7 @@ Our team manually scraped data from Glassdoor.com and save each job description 
  
  ## Data Processing
  - **data_extraction.py** (or **data_extraction_elongated.py** if there were problems with the other file) saves two pandas dataframes(dataframe1 and dataframe2) from the numpy arrays to analyze for any given users purpose.  In addition, txt files corresponding to average salary and amount of languages, locations, or states are generated.  Finally, bar graphs are plotted.  
- - **data_heatmap_python_java.py** , **data_heatmap_avg.py**, and **data_piecharts.py** groups data by desirable metrics such as average salary or market representation percentage to create our data visualization. These groupings are then saved as three separate dataframes.
+ - **data_heatmap_python_java.py** , **data_heatmap_avg.py**, and **data_piecharts.py** groups data by desirable metrics such as average salary or market representation percentage to create our data visualization. These groupings are then saved as three separate dataframes(dataframe3, dataframe4, and dataframe5).
  - **dataframe1.pkl**: Provides an overall dataframe of our data. Everything is grouped by job ID.
  - **dataframe2.pkl**: Expands our data so that we have a data entry for each language per job ID.
  - **dataframe3.pkl**: Dataframe that groups by a state's min and max paying languages per state. Used to create overall heatmap.
