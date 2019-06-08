@@ -8,6 +8,9 @@ This file creates two pie charts
 One chart shows the market representation of each language 
 The other chart shows the amount of listings per language on the market
 The purpose is to compare the two metrics and find a correlation
+
+Input: Pandas Dataframe
+Output: Two Pie Charts
 '''
 
 df4 = pd.read_pickle('dataframe4.pkl') #load dataframe4 from the directory
