@@ -10,6 +10,8 @@ We store these job IDs into a txt file
 Using this txt file we then make requests to the job listing descriptions that the job IDs point to 
 We scrape these descriptions in order to create our data sets
 
+Input: .txt File
+Output: .txt File
 '''
 
 with open('CAGlassdoorURLS.txt') as f:  #This file contains the manually pulled url searches
