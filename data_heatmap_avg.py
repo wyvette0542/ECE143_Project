@@ -6,6 +6,8 @@ This file creates dataframe3
 Dataframe 3 is used to create the heatmap comparing states vs. language vs. salary
 The file extracts maximum, minimum, and mean salary values per state for the highest and lowest paying languages
 
+Input: Pandas Dataframe
+Output: Pandas Dataframe
 '''
 
 np.seterr(divide='ignore',invalid='ignore')
