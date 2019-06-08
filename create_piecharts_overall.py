@@ -12,9 +12,9 @@ The purpose is to compare the two metrics and find a correlation
 
 df4 = pd.read_pickle('dataframe4.pkl') #load dataframe4 from the directory
 
-assert(isinstance(df4, pd.Dataframe)) # assert dataframe type 
+assert(isinstance(df4, pd.DataFrame)) # assert dataframe type 
 assert('Market %' in df4.columns)
-assert('Language Count' in df4.columns)
+assert('LanguageCount' in df4.columns)
 assert('Language' in df4.columns)
 
 # assign the datasets of interest to variables
