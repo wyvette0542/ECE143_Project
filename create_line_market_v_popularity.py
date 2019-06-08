@@ -7,6 +7,8 @@ from matplotlib.pylab import gca
 '''
 This file creates a line graph comparing the difference between a language's popularity vs. the average salary that language has
 It takes a pickled dataframe as its input
+Input: Pandas Dataframe
+Output: Matplotlib Line Graph
 '''
 
 df4 = pd.read_pickle('dataframe4.pkl') #load dataframe4 from the directory
