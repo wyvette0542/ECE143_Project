@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 with open('languages.txt', 'r')as f:
     read_languages = f.readlines()
 
+assert isinstance(read_languages, list)
 languages = []
 for language in read_languages:
     languages.append(language.lower()[:-1])
