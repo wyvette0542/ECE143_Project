@@ -43,5 +43,5 @@ Our team created one line graph to visualize the difference between a language's
  
 ### Bar Plots
 Our team created two bar plots to visualize languages salary and salary vs. states
-- **create_bar_State_vs_Language.py**
-- **create_bar_Salary_vs_Language.py**
+- **create_bar_Salary_vs_State.py** : This file creates a bar plot to compare average salaries of each state.
+- **create_bar_Salary_vs_Language.py**: This file creates a bar plot to compare average salaries between languages.
