@@ -3,9 +3,9 @@
 This is the ECE 143 final project repo for team 8. 
 
 ## Data Scraping
-Our team manually scraped data from Glassdoor.com and save each job description into a numpy file. The dataset has 12285 non-repeating job listings. 
- - First, **get_job_ids.py** pulls all the job ID's from Glassdoor and saves the ID numbers as a .txt file. 
- - Then, **save_text.py** loops through all the ID's and save each corresponding description into a separate numpy array of string. 
+Our team manually scraped data from Glassdoor.com and saved each job description into a numpy file. The dataset has 12285 non-repeating job listings. 
+ - First, **get_job_ids.py** pulls all the job IDs from Glassdoor and saves the ID numbers as a .txt file. 
+ - Then, **save_text.py** loops through all the IDs and saves each corresponding description into a separate numpy array of string. 
  
  ## Data Processing
  - **data_extraction.py** (or **data_extraction_elongated.py** if there were problems with the other file) saves two pandas dataframes(dataframe1 and dataframe2) from the numpy arrays to analyze for any given users purpose.  In addition, txt files corresponding to average salary and amount of languages, locations, or states are generated.  Finally, bar graphs are plotted.  
