@@ -38,7 +38,7 @@ df4['Market %'] = langSalary
 df4['LanguageCount'] = langProp
 df4['Diff'] = diff 
 
-#df4 = df4.sort_values(by=['Market %'],ascending=False) #Sort by highest market % in order to have a more meaningful pie chart
+df4 = df4.sort_values(by=['Market %'],ascending=False) #Sort by highest market % in order to have a more meaningful pie chart
 df4.to_pickle('dataframe4.pkl') #pickle the dataframe
 
 
