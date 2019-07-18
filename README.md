@@ -1,6 +1,6 @@
 # ECE143_Project
 ## The Best Programming Language in the US
-This is the ECE 143 final project repo for team 8. 
+This is the ECE 143 final project repo for team 8. Our goal was to determine the most valuable programming languages in the US to a software engineer in today's job market. We evaluated this using a number of metrics ranging from monetary to popularity rating.
 
 ## Presentation 
 https://tinyurl.com/y4v2cpfw
